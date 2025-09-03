@@ -124,6 +124,63 @@
             font-size: 0.9em;
         }
         
+        .support-section {
+            background-color: #e8f4f8;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .support-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .support-option {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .support-option h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .support-option p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            background-color: #2980b9;
+        }
+
         .footer {
             margin-top: 40px;
             padding-top: 20px;
@@ -199,6 +256,55 @@
             </div>
         </div>
         
+        <div class="support-section">
+            <h3>🆘 Need Help & Support</h3>
+            <div class="support-options">
+                <div class="support-option">
+                    <h4>📧 Email Support</h4>
+                    <p>Get help with technical issues, billing questions, or general inquiries.</p>
+                    <a href="mailto:support@designforgreen.ca" class="contact-link">support@designforgreen.ca</a>
+                </div>
+                <div class="support-option">
+                    <h4>📱 In-App Support</h4>
+                    <p>Open Snow Loop app and go to Settings → Help & Support for immediate assistance.</p>
+                </div>
+                <div class="support-option">
+                    <h4>🐛 Bug Reports</h4>
+                    <p>Report bugs or suggest new features to help us improve Snow Loop.</p>
+                    <a href="mailto:bugs@designforgreen.ca" class="contact-link">bugs@designforgreen.ca</a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px; font-style: italic; color: #7f8c8d;">
+                We typically respond to support requests within 24-48 hours during business days.
+            </p>
+        </div>
+
+        <div class="support-section">
+            <h3>❓ Frequently Asked Questions</h3>
+            <div class="support-options">
+                <div class="support-option">
+                    <h4>📍 GPS Tracking Issues</h4>
+                    <p><strong>Q:</strong> Why isn't my ski track recording?</p>
+                    <p><strong>A:</strong> Make sure Location Services are enabled for Snow Loop in your iPhone Settings → Privacy & Security → Location Services.</p>
+                </div>
+                <div class="support-option">
+                    <h4>🌤️ Weather Data</h4>
+                    <p><strong>Q:</strong> Weather information not updating?</p>
+                    <p><strong>A:</strong> Check your internet connection. Weather data requires an active connection to update. Try refreshing by pulling down on the weather screen.</p>
+                </div>
+                <div class="support-option">
+                    <h4>💾 Data & Storage</h4>
+                    <p><strong>Q:</strong> How is my ski data stored?</p>
+                    <p><strong>A:</strong> Your tracks are stored locally on your device and synced securely to our servers. You can view and delete your data anytime in Settings.</p>
+                </div>
+                <div class="support-option">
+                    <h4>💰 Subscription & Billing</h4>
+                    <p><strong>Q:</strong> How do I manage my subscription?</p>
+                    <p><strong>A:</strong> Go to iPhone Settings → Apple ID → Subscriptions → Snow Loop to manage your subscription or cancel anytime.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="legal-links">
             <a href="privacy-policy.html" class="legal-link">
                 🛡️ Privacy Policy
@@ -209,9 +315,6 @@
         </div>
         
         <div class="footer">
-            <p>
-                Need help or have questions? Contact us through the in-app support feature in Snow Loop.
-            </p>
             <p>
                 © 2025 Design for Green. All rights reserved.
             </p>
